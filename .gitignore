@@ -1,0 +1,19 @@
+# Direktori build
+bin/
+obj/
+
+# File pengaturan Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Folder kompilasi ulang
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+
+# Paket NuGet
+packages/
+*.nupkg
+*.snupkg
