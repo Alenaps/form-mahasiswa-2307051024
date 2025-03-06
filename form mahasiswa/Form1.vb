@@ -31,10 +31,17 @@
 
     Private Sub Process_Click(sender As Object, e As EventArgs) Handles Process.Click
 
+        Dim jeniskelamin As String = ""
+        If lakilaki.Checked Then
+            jeniskelamin = "Laki-Laki"
+        Else
+            jeniskelamin = "Perempuan"
+        End If
         MessageBox.Show("Hai : " & txtNama.Text & vbCrLf &
                         "Nip : " & txtNip.Text & vbCrLf &
                         "Fakultas : " & cmbFakultas.SelectedItem & vbCrLf &
-                        "Jurusan : " & cmbJurusan.SelectedItem)
+                        "Jurusan : " & cmbJurusan.SelectedItem & vbCrLf &
+                        "Jenis Kelamin : " & jeniskelamin)
 
     End Sub
 
@@ -43,6 +50,10 @@
     End Sub
 
     Private Sub Fakultas_Click(sender As Object, e As EventArgs) Handles Fakultas.Click
+
+    End Sub
+
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles lakilaki.CheckedChanged
 
     End Sub
 End Class
